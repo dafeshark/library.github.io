@@ -22,17 +22,29 @@ Zero DependenciesPure HTML, CSS, and JS — no build step
 </div>
 
 🗂️ Project Structure
+
 📁 library.github.io/
+
 ├── 📄 index.html               # Entry point
+
 ├── 📜 script.js                # App logic — OOP classes & DOM rendering
+
 ├── 🎨 style.css                # Styles & responsive grid
+
 │
+
 ├── 📁 images/
+
 │   ├── 📁 collections/         # Collection cover images
+
 │   └── 📁 books/
+
 │       ├── 📁 chess/           # Chess book covers
+
 │       └── 📁 physics/         # Physics book covers
+
 │
+
 └── 📁 pdf/                     # PDF files for each book
 
 🛠️ Tech Stack
