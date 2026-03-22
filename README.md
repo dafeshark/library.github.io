@@ -8,11 +8,17 @@ Your personal digital bookshelf, right in the browser
 Library is a lightweight digital library built entirely with vanilla web technologies — no frameworks, no dependencies. Browse curated book collections and read PDFs directly in your browser, with a clean card-based UI and smooth navigation.
 
 ✨ Features
-FeatureDescription🗂️ CollectionsBrowse books grouped by category📖 In-browser ReaderOpen PDFs without leaving the page🧭 Breadcrumb NavNavigate back to any level easily📱 ResponsiveAdapts to mobile and desktop screens⚡ Zero DependenciesPure HTML, CSS, and JS — no build step
+FeatureDescription🗂️ 
+CollectionsBrowse books grouped by category📖
+In-browser ReaderOpen PDFs without leaving the page🧭
+Breadcrumb NavNavigate back to any level easily📱
+ResponsiveAdapts to mobile and desktop screens⚡ 
+Zero DependenciesPure HTML, CSS, and JS — no build step
 
 📚 Current Collections
 <div align="center">
-🏆 Chess⚛️ Physicschess1Einsteinchess2Newtonchess3chess4chess5chess6
+🏆 Chess
+⚛️ Physics
 </div>
 
 🗂️ Project Structure
