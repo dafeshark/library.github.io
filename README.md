@@ -1,52 +1,77 @@
+<div align="center">
 📚 Library
-A web-based digital library built with vanilla HTML, CSS, and JavaScript. Browse collections of books organized by category and read them directly in the browser as PDFs.
-🌐 Live Demo
-dafeshark.github.io/library.github.io
-✨ Features
+Your personal digital bookshelf, right in the browser
+🌐 Live Demo →
+</div>
 
-Browse book collections by category (Chess, Physics)
-Click any book to open its PDF directly in the browser
-Breadcrumb navigation to go back to collections or book list
-Responsive grid layout (adapts to mobile screens)
+🖼️ About
+Library is a lightweight digital library built entirely with vanilla web technologies — no frameworks, no dependencies. Browse curated book collections and read PDFs directly in your browser, with a clean card-based UI and smooth navigation.
+
+✨ Features
+FeatureDescription🗂️ CollectionsBrowse books grouped by category📖 In-browser ReaderOpen PDFs without leaving the page🧭 Breadcrumb NavNavigate back to any level easily📱 ResponsiveAdapts to mobile and desktop screens⚡ Zero DependenciesPure HTML, CSS, and JS — no build step
+
+📚 Current Collections
+<div align="center">
+🏆 Chess⚛️ Physicschess1Einsteinchess2Newtonchess3chess4chess5chess6
+</div>
 
 🗂️ Project Structure
-library.github.io/
-├── index.html          # Main HTML file
-├── script.js           # App logic (collections, books, navigation)
-├── style.css           # Styles and responsive layout
-├── images/
-│   ├── collections/    # Cover images for each collection
-│   └── books/
-│       ├── chess/      # Cover images for chess books
-│       └── physics/    # Cover images for physics books
-└── pdf/                # PDF files for each book
-📖 Collections
-CollectionBooksChess6 books (chess1 – chess6)Physics2 books (Einstein, Newton)
+📁 library.github.io/
+├── 📄 index.html               # Entry point
+├── 📜 script.js                # App logic — OOP classes & DOM rendering
+├── 🎨 style.css                # Styles & responsive grid
+│
+├── 📁 images/
+│   ├── 📁 collections/         # Collection cover images
+│   └── 📁 books/
+│       ├── 📁 chess/           # Chess book covers
+│       └── 📁 physics/         # Physics book covers
+│
+└── 📁 pdf/                     # PDF files for each book
+
 🛠️ Tech Stack
 
-HTML5 — structure
-CSS3 — styling and responsive grid
-Vanilla JavaScript — OOP with classes (Library, Books), dynamic DOM rendering
-GitHub Pages — hosting
+HTML5 — Semantic structure
+CSS3 — Grid layout, responsive breakpoints, custom styling
+JavaScript (ES6+) — OOP with class, dynamic DOM manipulation, event handling
+GitHub Pages — Free static hosting with automatic deployment
 
-🚀 How to Run Locally
-bashgit clone https://github.com/dafeshark/library.github.io.git
+
+🚀 Getting Started
+bash# Clone the repository
+git clone https://github.com/dafeshark/library.github.io.git
+
+# Enter the project folder
 cd library.github.io
-# Open index.html in your browser
-No build step or dependencies required.
-➕ How to Add a New Collection
 
-Create a cover image in images/collections/ and images/books/<yourCollection>/
-Add the PDF files to pdf/
-In script.js:
+# Open in your browser (no server needed)
+open index.html
 
-Instantiate a new Library: const collection3 = new Library('name', './images/collections/name.png')
-Add a new case in loadingLibrary() for the collection card
-Instantiate Books objects for each book in the collection
-Add the books array to collectionBookMap
-Add a new case in openBooks() and a new info function (e.g. newCollectionInfo())
+➕ Adding a New Collection
 
+Add images → place cover in images/collections/ and book covers in images/books/<name>/
+Add PDFs → drop your PDF files inside the pdf/ folder
+Register the collection in script.js:
+
+js// 1. Create the collection object
+const collection3 = new Library('myCollection', './images/collections/myCollection.png');
+
+// 2. Create book objects
+const book9 = new Books('myCollection', './images/books/myCollection/book1.png', 'book1');
+
+// 3. Add to the book map
+const collectionBookMap = {
+  chess: [...],
+  physics: [...],
+  myCollection: [book9]   // 👈 add here
+};
+
+Add a new case in loadingLibrary(), openBooks(), and a new info function.
 
 
 📄 License
-Feel free to use and modify this project.
+This project is open source and free to use. Feel free to fork it and build your own library! 🚀
+
+<div align="center">
+Made with ❤️ by dafeshark
+</div>
